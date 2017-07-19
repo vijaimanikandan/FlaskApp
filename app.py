@@ -1,5 +1,5 @@
 import sqlite3
-from flask import Flask, render_template, json, request, g
+from flask import Flask, render_template, json, request, g, jsonify
 from bs4 import BeautifulSoup
 import requests
 import json
@@ -129,7 +129,7 @@ def showsignin():
 
 @app.route('/getImdb')
 def getimdb():
-	return flask.jsonify(getURL('pulp fiction'))
+	return jsonify(getURL('pulp fiction'))
 
 
 @app.route('/signUp', methods=['POST'])
