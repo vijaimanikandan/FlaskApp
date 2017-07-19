@@ -67,7 +67,7 @@ def getURL(input):
 					break
 		return getJSON(html)	
 	except Exception as e:
-		return 'Invalid input or Network Error!'
+		return 'Invalid input or Network Error: '+str(e)
 
 
 def get_db():
