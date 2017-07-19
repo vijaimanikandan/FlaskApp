@@ -51,6 +51,7 @@ def getJSON(html):
 	
 def getHTML(url):
 	response = requests.get(url)
+	console.log(response)
 	return BeautifulSoup(response.content,'html.parser')	
 	
 	
