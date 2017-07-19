@@ -131,7 +131,7 @@ def showsignin():
 
 @app.route('/getImdb')
 def getimdb():
-	return jsonify(getURL('pulp fiction'))
+	return jsonify(getURL('tt0110912'))
 
 
 @app.route('/signUp', methods=['POST'])
